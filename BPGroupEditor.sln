@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BPGroupEditor", "BPGroupEditor.csproj", "{DE239075-3FCF-4393-B030-AAE3E3394564}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "source", "source", "{AAFC5E98-9B7E-473C-8733-04CF7611AC19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BPGroupEditor", "Source\BPGroupEditor.csproj", "{DE239075-3FCF-4393-B030-AAE3E3394564}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
