@@ -67,55 +67,55 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddGroup.cs">
+    <Compile Include="Forms\AddGroup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddGroup.Designer.cs">
+    <Compile Include="Forms\AddGroup.Designer.cs">
       <DependentUpon>AddGroup.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddPermission.cs">
+    <Compile Include="Forms\AddPermission.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddPermission.Designer.cs">
+    <Compile Include="Forms\AddPermission.Designer.cs">
       <DependentUpon>AddPermission.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddPlayer.cs">
+    <Compile Include="Forms\AddPlayer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddPlayer.Designer.cs">
+    <Compile Include="Forms\AddPlayer.Designer.cs">
       <DependentUpon>AddPlayer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Colors.cs" />
-    <Compile Include="BPGroupsEditor.cs">
+    <Compile Include="Types\Colors.cs" />
+    <Compile Include="Forms\BPGroupsEditor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BPGroupsEditor.Designer.cs">
+    <Compile Include="Forms\BPGroupsEditor.Designer.cs">
       <DependentUpon>BPGroupsEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConfirmationBox.cs">
+    <Compile Include="Forms\ConfirmationBox.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConfirmationBox.Designer.cs">
+    <Compile Include="Forms\ConfirmationBox.Designer.cs">
       <DependentUpon>ConfirmationBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="ExtensionMethods.cs" />
-    <Compile Include="Group.cs" />
+    <Compile Include="Extension\ExtensionMethods.cs" />
+    <Compile Include="Types\Group.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Variables.cs" />
-    <EmbeddedResource Include="AddGroup.resx">
+    <Compile Include="Extension\Variables.cs" />
+    <EmbeddedResource Include="Forms\AddGroup.resx">
       <DependentUpon>AddGroup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddPermission.resx">
+    <EmbeddedResource Include="Forms\AddPermission.resx">
       <DependentUpon>AddPermission.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddPlayer.resx">
+    <EmbeddedResource Include="Forms\AddPlayer.resx">
       <DependentUpon>AddPlayer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BPGroupsEditor.resx">
+    <EmbeddedResource Include="Forms\BPGroupsEditor.resx">
       <DependentUpon>BPGroupsEditor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConfirmationBox.resx">
+    <EmbeddedResource Include="Forms\ConfirmationBox.resx">
       <DependentUpon>ConfirmationBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
