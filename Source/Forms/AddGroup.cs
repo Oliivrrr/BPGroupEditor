@@ -21,6 +21,7 @@ namespace BPGroupEditor
         {
             InitializeComponent();
             bpge = groupeditor;
+            typeComboBox.SelectedIndex = 0;
         }
 
         private void AddGroup_Load(object sender, EventArgs e)
@@ -30,7 +31,7 @@ namespace BPGroupEditor
 
         private void metroButton1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text != null)
+            if (textBox1.Text != "")
             {
                 foreach (var group in Variables.gr)
                 {
@@ -43,7 +44,6 @@ namespace BPGroupEditor
 
                 if (addGroup)
                 {
-                    Console.WriteLine(Variables.gr.Count);
                     Group grp = new Group();
                     grp.Name = textBox1.Text;
                     grp.Tag = "";
@@ -53,9 +53,7 @@ namespace BPGroupEditor
                     grp.Members = new List<string>();
                     grp.Type = typeComboBox.Text;
                     Variables.gr.Add(grp);
-                    Console.WriteLine(Variables.gr.Count);
                     bpge.LoadGroups();
-                    Console.WriteLine(Variables.gr.Count);
                     MetroMessageBox.Show(this, "Group Added Successfully!");
                     Close();
                 }
