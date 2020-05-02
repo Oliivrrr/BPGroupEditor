@@ -51,7 +51,7 @@ namespace BPGroupEditor
                     grp.Inherits = new List<string>();
                     grp.Permissions = new List<string>();
                     grp.Members = new List<string>();
-                    grp.Type = typeComboBox.Text;
+                    grp.Type = typeComboBox.SelectedValue.ToString();
                     Variables.gr.Add(grp);
                     Console.WriteLine(Variables.gr.Count);
                     bpge.LoadGroups();

@@ -277,7 +277,8 @@ namespace BPGroupEditor
             }
             else
             {
-                MetroMessageBox.Show(this, "Could not locate \"groups.json\" file. Make sure you are running this application in your \"BROKE PROTOCOL\" Folder.");
+                MetroMessageBox.Show(this,
+                    "Could not locate \"groups.json\" file. Make sure you are running this application in your \"BROKE PROTOCOL\" Folder.");
                 Close();
             }
         }
@@ -291,11 +292,6 @@ namespace BPGroupEditor
         {
             var sendr = (ComboBox)sender;
             Variables.activeGroup.Type = sendr.SelectedItem.ToString();
-        }
-
-        private void BPGroupsEditor_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

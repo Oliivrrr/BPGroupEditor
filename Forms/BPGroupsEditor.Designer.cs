@@ -54,7 +54,6 @@
             this.metroButton5 = new MetroFramework.Controls.MetroButton();
             this.metroButton6 = new MetroFramework.Controls.MetroButton();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
             this.GroupEditorTab.SuspendLayout();
             this.home.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -82,7 +81,9 @@
             this.GroupEditorTab.Name = "GroupEditorTab";
             this.GroupEditorTab.SelectedIndex = 1;
             this.GroupEditorTab.Size = new System.Drawing.Size(1090, 507);
+            this.GroupEditorTab.Style = MetroFramework.MetroColorStyle.Teal;
             this.GroupEditorTab.TabIndex = 0;
+            this.GroupEditorTab.Theme = MetroFramework.MetroThemeStyle.Light;
             this.GroupEditorTab.UseSelectable = true;
             // 
             // home
@@ -133,7 +134,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
-            this.panel2.Controls.Add(this.metroComboBox1);
             this.panel2.Controls.Add(this.permissionsBox);
             this.panel2.Controls.Add(this.membersBox);
             this.panel2.Controls.Add(this.metroButton4);
@@ -209,6 +209,8 @@
             // groupNameTitle
             // 
             this.groupNameTitle.AutoSize = true;
+            this.groupNameTitle.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.groupNameTitle.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.groupNameTitle.Location = new System.Drawing.Point(7, 0);
             this.groupNameTitle.Name = "groupNameTitle";
             this.groupNameTitle.Size = new System.Drawing.Size(120, 25);
@@ -228,6 +230,8 @@
             // 
             this.tagGroup.AutoSize = true;
             this.tagGroup.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.tagGroup.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.tagGroup.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.tagGroup.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tagGroup.Location = new System.Drawing.Point(779, 32);
             this.tagGroup.Name = "tagGroup";
@@ -241,6 +245,8 @@
             // 
             this.groupType.AutoSize = true;
             this.groupType.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupType.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.groupType.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.groupType.ForeColor = System.Drawing.SystemColors.ControlText;
             this.groupType.Location = new System.Drawing.Point(630, 31);
             this.groupType.Name = "groupType";
@@ -254,6 +260,8 @@
             // 
             this.InheritPerms.AutoSize = true;
             this.InheritPerms.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.InheritPerms.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.InheritPerms.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.InheritPerms.ForeColor = System.Drawing.SystemColors.ControlText;
             this.InheritPerms.Location = new System.Drawing.Point(447, 32);
             this.InheritPerms.Name = "InheritPerms";
@@ -267,6 +275,8 @@
             // 
             this.permissions.AutoSize = true;
             this.permissions.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.permissions.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.permissions.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.permissions.ForeColor = System.Drawing.SystemColors.ControlText;
             this.permissions.Location = new System.Drawing.Point(226, 31);
             this.permissions.Name = "permissions";
@@ -292,6 +302,8 @@
             // 
             this.member.AutoSize = true;
             this.member.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.member.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.member.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.member.ForeColor = System.Drawing.SystemColors.ControlText;
             this.member.Location = new System.Drawing.Point(7, 31);
             this.member.Name = "member";
@@ -368,15 +380,6 @@
             this.metroLabel1.TabIndex = 19;
             this.metroLabel1.Text = "Created by CoffeeTime for BPv1.05";
             // 
-            // metroComboBox1
-            // 
-            this.metroComboBox1.FormattingEnabled = true;
-            this.metroComboBox1.ItemHeight = 23;
-            this.metroComboBox1.Location = new System.Drawing.Point(630, 212);
-            this.metroComboBox1.Name = "metroComboBox1";
-            this.metroComboBox1.Size = new System.Drawing.Size(121, 29);
-            this.metroComboBox1.TabIndex = 15;
-            // 
             // BPGroupsEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -392,7 +395,6 @@
             this.Name = "BPGroupsEditor";
             this.Resizable = false;
             this.Text = "Broke Protocol Groups Editor";
-            this.Load += new System.EventHandler(this.BPGroupsEditor_Load);
             this.GroupEditorTab.ResumeLayout(false);
             this.home.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -432,7 +434,6 @@
         public MetroFramework.Controls.MetroTabControl GroupEditorTab;
         private MetroFramework.Controls.MetroButton metroButton6;
         private MetroFramework.Controls.MetroLabel metroLabel1;
-        private MetroFramework.Controls.MetroComboBox metroComboBox1;
     }
 }
 
